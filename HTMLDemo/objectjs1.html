@@ -1,0 +1,26 @@
+<html>
+<script>
+emp={id:102,name:"Sudhir",salary:40000}
+document.writeln(emp.id+"  "+emp.name+"   "+emp.salary); 
+
+var emp=new Object();
+emp.id=101;
+emp.name="Maya";
+emp.salary=25000;
+document.writeln(emp.id+"  "+emp.name+"  "+emp.salary);
+
+ function emp1(id,name,salary){
+	this.id=id;
+	this.name=name;
+	this.salary=salary;
+	this.changesalary=changesalary;
+}
+	function changesalary(othersalary){
+	this.salary=othersalary;
+}
+	e=new emp1(102,"Manya",45000);
+	document.writeln(e.id+"  "+e.name+"  "+e.salary);
+	e.changesalary(55000);
+	document.writeln("<br>"+e.id+"  "+e.name+"  "+e.salary); 
+</script>
+</html>

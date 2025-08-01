@@ -1,0 +1,19 @@
+<html>
+      <body>
+            <form>
+                 Username: <input type="text" >
+                 <input type="button" onclick="validateform()" value="validate">
+             </form>
+             <script>
+                  function validateform(){
+                  var name=document.querySelector('input').value;
+
+                  var pattern=/^[A-Za-z]+$/;
+                  if(name.search(pattern) != -1)
+                     alert("Welcome  "+name);
+                  else
+                  alert("Please enter alphabates only ");
+              }
+             </script>
+      </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="id1"></p>
+<script>
+let hello = "";
+hello = function() {
+  return "Hello Javascript Function";
+}
+document.getElementById("demo").innerHTML = hello();
+let hello1 = "";
+hello1 = () => "Hello Javascript Arrow Function";
+document.getElementById("demo1").innerHTML = hello1();
+let fun1 = (a,b) => a+b;
+ var n=fun1(2,3);
+ var n1=fun1('abc','pqr')
+document.getElementById("id1").innerHTML=n1;
+</script>
+</body>
+</html>

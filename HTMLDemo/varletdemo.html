@@ -1,0 +1,33 @@
+<html>
+<body>
+<h2>Redeclaring a Variable Using var</h2>
+<p id="d"></p>
+<div class="c1">element1</div>
+<script>
+var  x = 10;
+const pi=3.147;
+// Here x is 10
+{  
+var x = 2;
+document.writeln(x);
+// Here x is 2
+//pi=2.147; const value can not be changed
+document.writeln(pi);
+}
+// Here x is 2
+document.getElementById("d").innerHTML = x;
+
+let y= 10;
+// Here y is 10
+{ 
+       let y = 2;
+document.writeln(y);
+// Here y is 2
+}
+// Here y is 10
+document.writeln(y);
+const z=document.getElementsByClassName("c1");
+z[0].innerHTML=y;
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+      <body>
+            <p id="id1">First Paragraph</p>
+            <p>Second Paragraph</p>
+            <p class="c1">Class Paragraph1</p> 
+             <p class="c1">Class Paragraph2</p>
+      
+            <script>
+               var n=document.getElementById("id1").innerHTML;
+               alert(n);
+               var n1=document.getElementsByTagName('p')[1].innerHTML;
+               alert(n1)
+               var n2=document.getElementsByClassName('c1')[0].innerHTML;
+               alert(n2);
+               var n3=document.querySelector(".c1").innerHTML;
+               document.writeln(n3);
+               var n4=[document.querySelectorAll(".c1")[0].innerHTML,
+               document.querySelectorAll(".c1")[1].innerHTML];
+               document.writeln(n4[0]);
+               document.writeln(n4[1]);
+
+            </script>
+      </body>
+</html>

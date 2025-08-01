@@ -1,0 +1,62 @@
+<html>
+      <body>
+            <script>
+            var emp=["Sia","Jia","Raj"];
+
+            for(let i=0;i < emp.length;i++)
+            {
+              document.writeln(emp[i]);    
+
+            }
+            var emp1=emp.pop();
+            document.writeln(emp1);
+            emp.push("Pia");
+            for(let i=0;i < emp.length;i++)
+            {
+              document.writeln(emp[i]);    
+
+            }
+            document.writeln("<br>");
+            emp.unshift("Tia");
+            for(let i=0;i < emp.length;i++)
+            {
+              document.writeln(emp[i]);    
+
+            }
+            emp.shift();
+            for(let i=0;i < emp.length;i++)
+            {
+              document.writeln(emp[i]);    
+
+            }
+            document.writeln("<br>");
+            emp.sort();
+            for(let i=0;i < emp.length;i++)
+            {
+              document.writeln(emp[i]);    
+
+            }
+            emp.reverse();
+            for(let i=0;i < emp.length;i++)
+            {
+              document.writeln(emp[i]);    
+
+            }
+            
+            console.log(emp.find(searchEmp));
+            function searchEmp(emp1)
+            {
+                  return emp1=="Pia";
+            }
+            document.writeln("<br>");
+            emp.forEach(display);
+
+            function display(item,index)
+            {
+                  document.writeln(item);
+
+            }
+
+      </script>
+      </body>
+</html>

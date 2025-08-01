@@ -1,0 +1,23 @@
+<html>
+      <body>
+            <p onmouseenter="addnode()" onmouseleave="deletenode()">
+                  this is adding child demo</p>
+                  <script>
+                       function addnode()
+                        {
+                              var n=document.querySelector('p');
+                              var n1=document.createElement('p');
+                              n1.textContent="this is child element";
+                              n.appendChild(n1);
+                        }
+                        function  deletenode()
+                        {
+                              var n=document.querySelector('p');
+                              var n1=document.querySelector('p p');
+                              n.removeChild(n1);    
+                        }
+                  </script>
+
+
+      </body>
+</html>
