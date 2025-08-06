@@ -1,0 +1,18 @@
+<html>
+<body>
+<h2>Convert a JavaScript object into a JSON string</h2>
+<p id="demo"></p>
+<script>
+const myObj = { name: "John", age: 31, city: "New York" };
+const myJSON = JSON.stringify(myObj);
+document.writeln(myJSON);
+console.log(myJSON)
+const myJSON1 = '{"name":"John", "age":31, "city":"New York"}';
+const myObj1 = JSON.parse(myJSON1);
+document.getElementById("demo").innerHTML = myObj1.name+" "+
+myObj1.age+" "
++myObj1.city;
+console.log(myObj1)
+</script>
+</body>
+</html>
